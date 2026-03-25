@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react"
+import Icon from "@/components/ui/icon"
 import { cn } from "@/lib/utils"
 import { useEffect, useRef } from "react"
 
@@ -159,18 +160,18 @@ export default function Index() {
           <div className="mx-auto max-w-4xl">
             <div className="text-center px-0 leading-5">
               <h1 className="mb-8 text-balance text-5xl tracking-tight text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] md:text-6xl lg:text-8xl">
-                <span className="font-open-sans-custom not-italic">Идея.</span>{" "}
-                <span className="font-serif italic">Промпт.</span>{" "}
-                <span className="font-open-sans-custom not-italic">Результат.</span>
+                <span className="font-open-sans-custom not-italic">Опиши.</span>{" "}
+                <span className="font-serif italic">Создай.</span>{" "}
+                <span className="font-open-sans-custom not-italic">Запусти.</span>
               </h1>
 
               <p className="mb-8 mx-auto max-w-2xl text-pretty leading-relaxed text-gray-300 [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)] font-thin font-open-sans-custom tracking-wide leading-7 text-xl">
-                дизайнер, разработчик или просто любопытный — возьми идею,{" "}
-                <span className="font-serif italic">опиши</span> её и наблюдай, как она оживает
+                PromptCraft превращает любую идею в готовый интерфейс за минуты —{" "}
+                <span className="font-serif italic">без кода</span>, без долгих согласований, без лишних затрат
               </p>
 
-              <div className="flex justify-center">
-                <ShinyButton className="px-8 py-3 text-base">начать</ShinyButton>
+              <div className="flex justify-center gap-4">
+                <ShinyButton className="px-8 py-3 text-base">попробовать бесплатно</ShinyButton>
               </div>
             </div>
           </div>
@@ -201,11 +202,10 @@ export default function Index() {
           <div className="relative z-10 mx-auto w-full max-w-5xl">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                Тарифы и цены
+                Тарифы
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Выберите подходящий план. От индивидуальных авторов до корпоративных команд — гибкие
-                тарифы для вашего успеха.
+                Начните бесплатно и масштабируйтесь по мере роста — от соло-фаундера до корпоративной команды.
               </p>
             </div>
             <BentoPricing />
@@ -231,10 +231,10 @@ export default function Index() {
           <div className="relative z-10 mx-auto w-full max-w-7xl">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white [text-shadow:_0_4px_20px_rgb(0_0_0_/_60%)] font-open-sans-custom">
-                О нас
+                Наша миссия
               </h1>
               <p className="text-gray-300 mt-4 text-sm md:text-base font-open-sans-custom [text-shadow:_0_2px_10px_rgb(0_0_0_/_50%)]">
-                Узнайте больше о нашей миссии, видении и ценностях, которые движут нами.
+                Мы делаем создание цифровых продуктов доступным для каждого — независимо от опыта в разработке.
               </p>
             </div>
             <AboutQuote />
@@ -258,8 +258,8 @@ export default function Index() {
 
           <div className="relative z-10 mx-auto w-full max-w-5xl mt-[5vh]">
             <ContactCard
-              title="Свяжитесь с нами"
-              description="Если у вас есть вопросы о наших услугах или нужна помощь, заполните форму. Мы стараемся отвечать в течение 1 рабочего дня."
+              title="Хотите попробовать?"
+              description="Оставьте заявку — мы расскажем как начать, покажем демо и ответим на любые вопросы. Отвечаем в течение 1 рабочего дня."
               contactInfo={[
                 {
                   icon: MailIcon,
